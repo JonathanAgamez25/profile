@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio - Ingeniero de Datos</title>
+    <link rel="stylesheet" href="./Assets/Styles.css" />
+  </head>
+  <body>
+    <!-- ====== HEADER ====== -->
+    <header id="inicio">
+      <nav class="menu-derecha">
+        <button class="boton" onclick="irA('inicio')">Inicio</button>
+        <button class="boton" onclick="irA('sobre-mi')">Sobre mí</button>
+        <button class="boton" onclick="irA('proyectos')">Proyectos</button>
+        <button class="boton" onclick="irA('contacto')">Contacto</button>
+      </nav>
+
+      <!-- Contenedor con foto y texto -->
+      <div class="intro">
+        <div class="foto">
+          <img src="./Assets/Imagenes/147431944.jpeg" alt="Foto de perfil" />
+        </div>
+        <div class="texto">
+          <h1 class="typewriter">Hola, soy Jonathan Ávila</h1>
+          <p>
+            Ingeniero de Datos apasionado por transformar datos en conocimiento.
+            Experto en Python, SQL y tecnologías de Big Data. 🚀
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- ====== SECCIONES ====== -->
+    <section id="sobre-mi">
+      <h2 class="reveal">Sobre mí</h2>
+      <div class="contenido reveal">
+        <p style="max-width: 760px; margin: 0 auto">
+          Soy ingeniero de datos junior con foco en Python, SQL y Azure. Me
+          gusta armar pipelines claros, tableros útiles y dejar todo
+          reproducible. Aprendo rápido, documento lo necesario y prefiero
+          soluciones simples que funcionen bien en producción.
+        </p>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <h2 class="reveal">Proyectos</h2>
+      <div class="contenido reveal">
+        <div class="proyectos-grid">
+          <article class="proyecto-card">
+            <h3 class="proyecto-titulo">Nombre del proyecto 1</h3>
+            <div class="proyecto-metas">
+              <span class="chip">Python</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Azure</span>
+            </div>
+            <p class="proyecto-descripcion">
+              Breve descripción del proyecto: objetivo, datos usados y resultado
+              (2-3 líneas máximo).
+            </p>
+            <div class="proyecto-links">
+              <a href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+          <article class="proyecto-card">
+            <h3 class="proyecto-titulo">Nombre del proyecto 2</h3>
+            <div class="proyecto-metas">
+              <span class="chip">PySpark</span>
+              <span class="chip">Data Factory</span>
+              <span class="chip">Power BI</span>
+            </div>
+            <p class="proyecto-descripcion">
+              Breve descripción del proyecto: objetivo, datos usados y resultado
+              (2-3 líneas máximo).
+            </p>
+            <div class="proyecto-links">
+              <a href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2 class="reveal">Contacto</h2>
+      <div class="contenido reveal">
+        <p>
+          Puedes agregar tu correo, LinkedIn, GitHub o un formulario de
+          contacto.
+        </p>
+      </div>
+    </section>
+
+    <footer id="footer" class="reveal">
+      <div class="footer-content">
+        <p>
+          © <span id="year"></span> Jonathan Ávila — Portafolio de Ingeniero de
+          Datos. Hecho con cariño y café.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
